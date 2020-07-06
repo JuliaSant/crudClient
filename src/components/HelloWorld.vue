@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row">
-      <div class="col">
+      <div class="col-lg-6 col-md-6 col-sm-12">
         <form>
           <h2>Cadastre</h2>
           <input type="text" placeholder="nome" class="w-75 mb-1" v-model="newName">
@@ -11,7 +11,7 @@
           <button type="button" class="btn btn-success w-50" @click="addcliente()">Adicionar</button>
         </form>
       </div>
-      <div class="col">
+      <div class="col-lg-6 col-md-6 col-sm-12">
       <form>
         <h2>Altere</h2>
         <input type="text" placeholder="nome" class="w-75 mb-1" v-model="oldName">
@@ -21,18 +21,18 @@
       </form>
       </div>
     </div>
-    <div v-if="clientes" v-for="cliente in clientes" class="mt-2 pl-5 pr-5">
+    <div v-if="clientes" v-for="cliente in clientes" class="row-12 mt-2 pl-5 pr-5">
       <div class="row">
-        <div class="col"> 
+        <div class="col-lg-3 col-md-3 col-sm-12"> 
           <p>Nome:{{cliente.name}}</p>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <p>Email:{{cliente.email}}</p>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <p>Cpf:{{cliente.cpf}}</p>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <p>Numero:{{cliente.numero}}</p>
         </div>
         <div class="col-12">
